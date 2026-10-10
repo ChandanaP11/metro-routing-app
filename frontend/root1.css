@@ -1,0 +1,173 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+p,
+label,
+select,
+input {
+  margin: 10px;
+  padding: 10px;
+}
+
+/* Apply some basic styles to the container */
+#find-route {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ccf0d1;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #4CAF50;
+}
+
+p {
+  text-align: center;
+  font-size: 1rem;
+  color: rgb(124, 124, 243);
+}
+
+#distance {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(222, 95, 36);
+}
+
+#fare {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(183, 88, 251);
+  margin: 20px;
+}
+
+/* Style the form */
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+select,
+input[type='button'] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type='button'] {
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+input[type='button']:hover {
+  background-color: #0056b3;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Style the results section */
+.results {
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+span {
+  font-weight: bold;
+}
+
+#image-container {
+  margin-top: 20px; /* Adds spacing between the button and the image */
+  text-align: center; /* Centers the image horizontally */
+}
+
+#image-container img {
+  width: 800px; /* Adjusts the width of the image */
+  height: auto; /* Maintains the aspect ratio */
+  border-radius: 10px; /* Optional: Adds rounded corners */
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3); /* Adds a shadow for a nicer look */
+  display: inline-block; /* Ensures proper layout */
+}
+
+
+/* Media Queries for Responsiveness */
+
+/* Adjust styles for screens smaller than 768px */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  label {
+    font-size: 14px;
+    margin-bottom: 3px;
+  }
+
+  select,
+  input[type='button'] {
+    font-size: 14px;
+    padding: 8px;
+    margin-bottom: 8px;
+  }
+}
+
+/* Adjust styles for screens smaller than 480px */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  label {
+    font-size: 12px;
+    margin-bottom: 3px;
+  }
+
+  select,
+  input[type='button'] {
+    font-size: 12px;
+    padding: 6px;
+    margin-bottom: 6px;
+  }
+}

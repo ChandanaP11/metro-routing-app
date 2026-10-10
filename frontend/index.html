@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Bangalore Metro</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <ul>
+        <li><a href="#home-section">Home</a></li>
+        <li><a href="#auth-section">Login Page</a></li>
+        <li><a href="root1.html">Find Route</a></li>
+        <li><a href="map.html">Proposed Map</a></li>
+        <li><a href="maaaap.jpg" >Current Map</a></li>
+        <li><a href="#about-section">About Us</a></li>
+        <li><a href="#contact-section">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Full-Screen Background Image -->
+   
+    <div id="home-section">
+      <h1>Welcome to Bangalore Metro</h1>
+      <p>Your seamless journey begins here!</p>
+      <img src="footer-img.png" alt="metro">
+    </div>
+
+    <div id="auth-section">
+      <h1>Bangalore Metro</h1>
+      <!-- Login Form -->
+      <div id="login-form">
+        <h2>Login</h2>
+        <label for="login-username">Username:</label>
+        <input type="text" id="login-username" />
+        <label for="login-password">Password:</label>
+        <input type="password" id="login-password" />
+        <button onclick="login()">Login</button>
+        <p>Don't have an account? <a href="javascript:void(0)" onclick="toggleForms()">Register here</a></p>
+      </div>
+      
+      <!-- Registration Form -->
+      <div id="register-form" style="display: none;">
+        <h2>Register</h2>
+        <label for="register-username">Username:</label>
+        <input type="text" id="register-username" />
+        <label for="register-password">Password:</label>
+        <input type="password" id="register-password" />
+        <button onclick="register()">Register</button>
+        <p>Already have an account? <a href="javascript:void(0)" onclick="toggleForms()">Login here</a></p>
+      </div>
+    </div>
+
+    <!-- Metro Fare and Route Calculation -->
+    <div id="metro-section" style="display: none;">
+      <h1>Ticket Booking</h1>
+      <div class="form">
+        <label for="source">Source Station:</label>
+        <select id="source">
+          <option value="">Select Source Station</option>
+        </select>
+        <label for="destination">Destination Station:</label>
+        <select id="destination">
+          <option value="">Select Destination Station</option>
+        </select>
+
+
+      <!---<input type="button" value="Calculate" onclick="calculate()" />
+      </div>
+
+        <div class="results">
+          <h2>Results</h2>
+          <p><b>Fare:</b> <span id="fare"></span></p>--->
+        
+          <button onclick="bookTicket()">BOOK TICKET</button>
+        </div>
+    </div>
+  
+
+    <!-- Ticket Booking Page -->
+    <div id="ticket-page" style="display: none;">
+      <h1>Ticket Details</h1>
+      <p><b>Name:</b> <span id="ticket-username"></span></p>
+      <p><b>Source:</b> <span id="ticket-source"></span></p>
+      <p><b>Destination:</b> <span id="ticket-destination"></span></p>
+      <div id="message">
+        <p>Your ticket is booked successfully!<br>Thank you and visit again!</p>
+      </div>
+    </div>
+
+ <!-- About Section -->
+ <div id="about-section">
+  <h1>About Us</h1>
+  <img src="metro.jpg" alt="Metro" height="150" width="150">
+  Bangalore Metro is dedicated to providing efficient and comfortable transport solutions for our commuters.
+  We are committed to making daily travel faster, safer, and more convenient for the people of Bangalore.  
+    Our metro system is designed with state-of-the-art infrastructure, ensuring accessibility and sustainability while reducing the city's traffic congestion. With our reliable and punctual services, we aim to make urban commuting a stress-free experience.  
+    We take pride in being eco-friendly, reducing the city's carbon footprint by promoting public transportation over private vehicles. Our team works tirelessly to expand the metro network, connecting more neighborhoods and making every corner of Bangalore accessible.  
+    At Bangalore Metro, our vision is to enhance the quality of urban living through superior connectivity and seamless mobility. Thank you for being a part of our journey towards a smarter, greener city!  
+</div>
+
+
+<!-- Contact Section -->
+<div id="contact-section" style="padding: 200px;">
+  <h1>Contact</h1>
+  <p>For inquiries, please reach out to us at support@bangaloremetro.com.<br> Ph no: 9876543210<br>Email:bangloremetro@gmail.com</p>
+</div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
